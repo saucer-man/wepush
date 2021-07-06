@@ -10,10 +10,9 @@ type Config struct {
 	LogLevel         string
 	LogPath          string
 	WechatWorkConfig struct {
-		DefaultReceiverUserId string
-		CorpId                string
-		CorpSecret            string
-		AgentId               string
+		CorpId     string
+		CorpSecret string
+		AgentId    string
 	}
 	TokenConfig struct {
 		Token     string
@@ -36,7 +35,6 @@ func LoadConfig() Config {
 	config.LogPath = GetEnvDefault("LogPath", "/var/log/wepush")
 	config.WechatWorkConfig.CorpSecret = GetEnvDefault("CorpSecret", "xxx")
 	config.WechatWorkConfig.CorpId = GetEnvDefault("CorpId", "xxx")
-	config.WechatWorkConfig.DefaultReceiverUserId = GetEnvDefault("DefaultReceiverUserId", "@all")
 	config.WechatWorkConfig.AgentId = GetEnvDefault("AgentId", "xxx")
 	return config
 }
