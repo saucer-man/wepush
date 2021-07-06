@@ -33,7 +33,7 @@ func LoadConfig() Config {
 	var config Config
 	config.AuthToken = GetEnvDefault("AuthToken", "123456")
 	config.LogLevel = GetEnvDefault("LogLevel", "debug")
-	config.LogPath = GetEnvDefault("LogPath", "/var/logs/wepush")
+	config.LogPath = GetEnvDefault("LogPath", "/var/log/wepush")
 	config.WechatWorkConfig.CorpSecret = GetEnvDefault("CorpSecret", "xxx")
 	config.WechatWorkConfig.CorpId = GetEnvDefault("CorpId", "xxx")
 	config.WechatWorkConfig.DefaultReceiverUserId = GetEnvDefault("DefaultReceiverUserId", "@all")

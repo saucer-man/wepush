@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  wepush:
+    build: .
+    restart: always
+    ports:
+      - "8001:80"
+    volumes:
+      - ./log:/var/log/wepush
+    env_file:
+    - wepush.env

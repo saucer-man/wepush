@@ -1,4 +1,4 @@
-module wepush
+module github.com/saucerman/wepush
 
 go 1.16
 

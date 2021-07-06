@@ -4,8 +4,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"wepush/config"
-	"wepush/server"
+	"github.com/saucerman/wepush/config"
+	"github.com/saucerman/wepush/server"
 
 	nested "github.com/antonfisher/nested-logrus-formatter"
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
